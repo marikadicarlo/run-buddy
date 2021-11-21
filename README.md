@@ -35,6 +35,6 @@ https://www.youtube.com/watch?v=wrb7Gge9yoE&ab_channel=Codecademy
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+&copy; 2019 Run Buddy, Inc.
 
 ---
