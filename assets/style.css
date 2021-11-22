@@ -9,6 +9,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* HEADER / NAV BAR STYLES START */
 header {
   display: flex;
   justify-content: space-between;
@@ -23,10 +24,6 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   }
-
-header a {
-  color: #fce138;
-}
 
 header a {
   text-decoration: none;
@@ -58,11 +55,14 @@ header h1 {
   margin: 0;
   display: inline;
 }
+/* HEADER / NAVBAR STYLES END */
 
+/* STYLE ALL SECTION TAGS */
 section {
   padding: 60px;
 }
 
+/* HERO STYLES START */
 .hero {
   display: flex;
   justify-content: center;
@@ -135,7 +135,9 @@ section {
   padding: 10px 20px;
   font-size: 16px;
 }
+/* HERO STYLES END */
 
+/* WHAT WE DO STYLES */
 .intro p {
   line-height: 1.7;
   color: #39a6b2;
@@ -144,7 +146,9 @@ section {
   margin: 0 auto;
   text-align: center;
 }
+/* WHAT YOU DO STYLES END */
 
+/* WHAT YOU DO STYLES START */
 .step {
   margin: 50px auto;
   padding-bottom: 50px;
@@ -197,7 +201,9 @@ section {
 .step-text {
   flex: 12;
 }
+/* WHAT YOU DO STYLES END */
 
+/* SECTION TITLE STYLES START */
 .section-title {
   font-size: 48px;
   color: #024e76;
@@ -215,7 +221,9 @@ section {
 .secondary-border {
   border-color: #39a6b2;
 }
+/* SECTION TITLE STYLES END */
 
+/* MEET THE TRAINERS START */
 .trainer {
   margin: 20px;
   background: #024e76;
@@ -253,6 +261,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+/* TRAINER STYLES END */
 
 .section-title {
   font-size: 55px;
@@ -263,6 +272,7 @@ section {
   color: #024e76;
 }
 
+/* REACH OUT STYLES START */
 .contact {
   background-color: #024e76;
 }
@@ -327,7 +337,9 @@ section {
   padding: 15px 0;
   font-size: 16px;
 }
+/* REACH OUT STYLES END */
 
+/* UTILITIES */
 .text-left {
   text-align: left;
 }
@@ -336,6 +348,11 @@ section {
   text-align: right;
 }
 
+.flex-row {
+  display: flex;
+}
+
+/* FOOTER STYLES START */
 footer {
   display: flex;
   justify-content: space-between;
@@ -359,11 +376,9 @@ footer div {
 footer a {
   color: #024e76;
 }
+/* END FOOTER STYLES */
 
-.flex-row {
-  display: flex;
-}
-
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
     padding-bottom: 0;
