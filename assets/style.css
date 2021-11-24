@@ -246,50 +246,62 @@ section {
 }
 /* HERO STYLES END */
 
+/* SECTION TITLE STYLES START */
+.section-title {
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: var(--secondary-color);
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: var(--primary-color);
+}
+
+.secondary-border {
+  border-color: var(--tertiary-color);
+}
+/* SECTION TITLE STYLES END */
+
 /* WHAT WE DO STYLES */
 .intro p {
   line-height: 1.7;
-  color: #39a6b2;
+  color: var(--tertiary-color);
   width: 80%;
   font-size: 20px;
   margin: 0 auto;
+  font-size: 20px;
   text-align: center;
 }
 /* WHAT YOU DO STYLES END */
 
 /* WHAT YOU DO STYLES START */
+.steps {
+  background: var(--primary-color);
+}
+
 .step {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.steps {
-  background: #fce138;
+.step:last-child {
+  border-bottom: none;
 }
-
 
 .step h3 {
-  flex: 1 30%;
-  color: #024e76;
+  color: var(--secondary-color);
   font-size: 46px;
+  flex-wrap: 1 30%;
 }
-
-.steps-text p {
-  color: #39a6b2;
-  font-size: 18px;
-}
-
-.step-text h4 {
-  font-size: 26px;
-  line-height: 1.5;
-  color: #024e76;
-  }
 
 .step-info {
   flex: 2 70%;
@@ -310,27 +322,18 @@ section {
 .step-text {
   flex: 12;
 }
+
+.step-text p {
+  color: var(--tertiary-color);
+  font-size: 18px;
+}
+
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
 /* WHAT YOU DO STYLES END */
-
-/* SECTION TITLE STYLES START */
-.section-title {
-  font-size: 48px;
-  color: #024e76;
-  border-bottom: 3px solid;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
-
-.primary-border {
-  border-color: #fce138;
-}
-
-.secondary-border {
-  border-color: #39a6b2;
-}
-/* SECTION TITLE STYLES END */
 
 /* MEET THE TRAINERS START */
 .trainer {
