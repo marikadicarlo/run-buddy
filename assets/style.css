@@ -336,11 +336,19 @@ section {
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
+.trainers {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .trainer {
   margin: 20px;
-  background: #024e76;
-  color: #fce138;
   flex: 1;
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .trainer img {
@@ -364,14 +372,6 @@ section {
 
 .trainer-bio p {
   font-size: 17px;
-}
-
-.trainers {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 /* TRAINER STYLES END */
 
