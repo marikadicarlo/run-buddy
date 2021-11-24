@@ -72,6 +72,32 @@ header nav ul li a:hover {
 }
 /* HEADER / NAVBAR STYLES END */
 
+/* FOOTER STYLES START */
+footer {
+  background: var(--primary-color);
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer h2 {
+  color: var(--secondary-color);
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: var(--secondary-color);
+}
+/* END FOOTER STYLES */
+
 /* STYLE ALL SECTION TAGS */
 section {
   padding: 60px;
@@ -79,39 +105,14 @@ section {
 
 /* HERO STYLES START */
 .hero {
+  background-image: url(./images/hero-bg.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-image: url('./images/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
   align-items: flex-start;
-}
-
-.hero form {
-  background-color: #fce138;
-  padding: 20px;
-  width: auto;
-  color: #024e76;
-  text-align: left;
-}
-
-.hero-form {
-  border: 3px solid #024e76;
-  background-color: #fce138;
-  padding: 20px;
-  color: #024e76;
-  width: 40%;
-  margin: 3.5%;
-}
-
-.hero-form h3 {
-  font-size: 24px;
-  margin: 0;
-}
-
-.hero-form p {
-  margin: 5px 0 15px 0;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 .hero-cta {
@@ -126,17 +127,49 @@ section {
 .hero-cta h2 {
     font-style: italic;
     font-size: 55px;
-    color: #fce138;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);;
   }
 
+.hero form {
+  border: 3px solid var(--secondary-color);
+  background-color: rgba(255, 225, 56, 0.8);
+  padding: 20px;
+  color: var(--secondary-color);
+  width: 40%;
+  margin: 3.5%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-form button:hover {
+  background-color: var(--tertiary-color);
+}
+
+.hero-form h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.hero-form p {
+  margin: 5px 0 15px 0;
+}
+
 .form-input {
-  border: 1px solid #024e76;
+  border: 1px solid var(--secondary-color);
   display: block;
   padding: 7px 15px;
   font-size: 16px;
-  color: #024e76;
+  color: var(--secondary-color);
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+}
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 0.75);
+  outline: none;
 }
 
 .hero-form label {
@@ -144,11 +177,72 @@ section {
 }
 
 .hero-form button {
-  color: #fce138;
-  background-color: #024e76;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 10px;
+}
+
+.checkbox-wrapper input, .radio-wrapper input {
+  opacity: 0;
+}
+
+.checkbox-wrapper label, .radio-wrapper label {
+  position: relative;
+  left: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+.checkbox-wrapper label::before, .radio-wrapper label::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgba(255, 255, 255, 0.75);  
+  border: 1px solid var(--secondary-color);  
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+.radio-wrapper label::before {
+  border-radius: 50%;
+}
+
+.radio-wrapper label::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  position: absolute;
+  left: -29px;
+  top: -3px;
+  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
+}
+
+.checkbox-wrapper label::after {
+  content: "";
+  height: 6px;
+  width: 14px;
+  border-left: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  position: absolute;
+  left: -26px;
+  top: 1px;
+  transform: rotate(-58deg);
+}
+
+.checkbox-wrapper input + label::after, 
+.radio-wrapper input + label::after {
+  content: none;
+}
+
+.checkbox-wrapper input:checked + label::after, 
+.radio-wrapper input:checked + label::after {
+  content: "";
 }
 /* HERO STYLES END */
 
@@ -367,31 +461,7 @@ section {
   display: flex;
 }
 
-/* FOOTER STYLES START */
-footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background: #fce138;
-  width: 100%;
-  padding: 40px 35px;
-}
 
-footer h2 {
-  color: #024e76;
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div {
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a {
-  color: #024e76;
-}
-/* END FOOTER STYLES */
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 980px) {
